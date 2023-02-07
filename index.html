@@ -188,21 +188,19 @@
       <div class="delivery-form-container">
         <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <div class="form-container">
-        <form class="delivery-form">
-          <p class="form-text">Дата</p>
-          <input class="form-field" type="date" required>
+        <form class="delivery-form-date">
+          <p class="form-text-date">Дата</p>
+          <input class="form-field-date" type="date" required>
+        </form>
+        <form class="delivery-form-tel">
+          <p class="form-text-tel">Телефон</p>
+          <input class="form-field-tel" type="text" placeholder="+7 800 999-00-00" required>
         </form>
         </div>
-        <div class="form-container">
-        <form class="delivery-form">
-          <p class="form-text">Телефон</p>
-          <input class="form-field" type="number" placeholder="+7 800 999-00-00" required>
-        </form>
-        </div>
-        <div class="form-container">
-        <form class="delivery-form">
-          <p class="form-text">Адрес</p>
-          <input class="form-field" type="text" placeholder="ул. Большая Конюшенная, 19/8" required>
+        <div class="form-container-adress">
+        <form class="delivery-form-adress">
+          <p class="form-text-adress">Адрес</p>
+          <input class="form-field-adress" type="text" placeholder="ул. Большая Конюшенная, 19/8" required>
         </form>
         </div>
         <button class="form-button">Отправить</button>

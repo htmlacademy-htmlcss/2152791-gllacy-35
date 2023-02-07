@@ -542,8 +542,199 @@ body {
   border-radius: 16px;
 }
 
+.subscribe-text {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d3440;
+  margin: 26px auto 44px auto;
+  width: 506px;
+  text-align: left;
+}
+
+.subscribe-field {
+  width: 332px;
+  height: 48px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  margin-left: 26px;
+  margin-bottom: 26px;
+  opacity: 30%;
+}
+
+.subscribe-button {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fcfcfc;
+  border: 4px solid #ff2f64;
+  padding: 12px 32px 12px 32px;
+  box-shadow: 0 4px 12px 0 #2d3440;
+  margin-left: 18px;
+  background-color: #ff2f64;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+
 .delivery {
   display: flex;
+  width: 1170px;
+  margin: 80px auto 0 auto;
+  background-color: #fcfcfc;
+  border-radius: 16px;
+}
+
+.delivery-info-title {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2d3440;
+  margin: 167px 0 24px 100px;
+  width: 356px;
+  text-align: left;
+}
+
+.delivery-info-text {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d3440;
+  margin: 0 0 163px 100px;
+  width: 371px;
+  text-align: left;
+}
+
+.delivery-form-container {
+  width: 500px;
+  height: 406px;
+  background-color: #fcfcfc;
+  margin: 64px 64px 64px 135px;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px 0 #2d3440;
+}
+
+.delivery-form-text {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d3440;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 32px;
+}
+
+.form-container {
+  display: flex;
+}
+
+.delivery-form-date {
+  margin-left: 40px;
+}
+
+.form-field-date {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d3440;
+  opacity: 30%;
+  width: 117px;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid #b9b9b9;
+  padding-left: 16px;
+}
+
+.form-text-date {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  margin-top: 0;
+  color: #2d3440;
+}
+
+.delivery-form-tel {
+  margin-left: 16px;
+}
+
+.form-field-tel {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d3440;
+  opacity: 30%;
+  width: 287px;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid #b9b9b9;
+  padding-left: 16px;
+}
+
+.form-text-tel {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  margin-top: 0;
+  color: #2d3440;
+}
+
+.delivery-form-adress {
+  margin-left: 40px;
+}
+
+.form-field-adress {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d3440;
+  opacity: 30%;
+  width: 420px;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid #b9b9b9;
+  padding-left: 16px;
+}
+
+.form-text-adress {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  color: #2d3440;
+}
+
+.form-button {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fcfcfc;
+  border: 4px solid #ff2f64;
+  padding: 12px 32px 12px 32px;
+  box-shadow: 0 4px 12px 0 #2d3440;
+  margin: 32px auto 42px auto;
+  background-color: #ff2f64;
+  border-radius: 26px;
+  cursor: pointer;
 }
 
 .breadcrumbs-list {
@@ -659,5 +850,8 @@ body {
   line-height: 16px;
   color: #2d3440;
 }
+<<<<<<< HEAD
 
 .
+=======
+>>>>>>> bfcd6c4fce1a7ad645de25d12af06bd39de291b5

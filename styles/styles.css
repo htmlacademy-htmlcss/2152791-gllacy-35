@@ -585,14 +585,79 @@ body {
 
 .page-footer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  height: 153px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.vk-link {
+  margin-left: 16px;
+}
+
+.youtube-link {
+  margin-left: 16px;
 }
 
 .footer-menu-list {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
   display: grid;
-  grid-template-columns: 182px 182px;
+  grid-template-columns: 160px 240px;
+  column-gap: 24px;
+  row-gap: 8px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.for-provider {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.footer-menu-link {
+  position: relative;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  cursor: pointer;
+}
+
+.footer-like-icon {
+  position: absolute;
+  top: 2px;
+  left: -20px;
 }
 
 .footer-academy-container {
   display: flex;
   flex-direction: column;
 }
+
+.footer-logo-link {
+  margin-top: 48px;
+}
+
+.footer-text {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2d3440;
+}
+
+.

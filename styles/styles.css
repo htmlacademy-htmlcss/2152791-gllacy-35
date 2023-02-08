@@ -160,6 +160,7 @@ body {
   display: flex;
   margin-left: 21px;
   align-items: center;
+  position: relative;
 }
 
 .icecream-one-img {
@@ -172,6 +173,34 @@ body {
 
 .icecream-three-img {
   margin-left: 75px;
+}
+
+.left-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: #ff2f64;
+  border: 2px solid #fcfcfc;
+  border-radius: 50%;
+  position: absolute;
+  top: 260px;
+  left: -25px;
+}
+
+.right-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: #ff2f64;
+  border: 2px solid #fcfcfc;
+  border-radius: 50%;
+  position: absolute;
+  top: 260px;
+  right: 270px;
 }
 
 .slider-description-container {
@@ -189,6 +218,18 @@ body {
   color: #2d3440;
   margin-top: 136px;
   margin-bottom: 0;
+  position: relative;
+}
+
+.slider-description-title::before {
+  content: "";
+  position: absolute;
+  width: 312px;
+  height: 312px;
+  border-radius: 50%;
+  background-color: #ffcbd8;
+  top: -10px;
+  right: -325px;
 }
 
 .slider-description-text {
@@ -739,14 +780,21 @@ body {
 }
 
 .adress {
+  display: flex;
   width: 1170px;
   min-height: 492px;
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
+  background-color: #ff7799;
+  border-radius: 16px;
 }
 
 .adress-container {
+  display: flex;
+  flex-direction: column;
   background-color: #fcfcfc;
   border-radius: 8px;
+  width: 343px;
+  height: 364px;
   box-shadow: 0 8px 16px 0 #2d3440;
   margin-top: 64px;
   margin-bottom: 64px;
@@ -762,6 +810,8 @@ body {
   margin-top: 40px;
   margin-bottom: 0;
   margin-left: 40px;
+  text-align: left;
+  width: 179px;
 }
 
 .main-adress {
@@ -773,6 +823,8 @@ body {
   margin-top: 12px;
   margin-bottom: 0;
   margin-left: 40px;
+  text-align: left;
+  width: 263px;
 }
 
 .adress-phone {
@@ -784,6 +836,7 @@ body {
   margin-top: 24px;
   margin-bottom: 0;
   margin-left: 40px;
+  text-align: left;
 }
 
 .adress-number {
@@ -795,6 +848,7 @@ body {
   margin-top: 12px;
   margin-bottom: 0;
   margin-left: 40px;
+  text-align: left;
 }
 
 .adress-timesheet {
@@ -806,6 +860,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 40px;
+  text-align: left;
 }
 
 .adress-button {
@@ -815,7 +870,7 @@ body {
   line-height: 20px;
   color: #fcfcfc;
   border: 4px solid #ff2f64;
-  padding: 12px 32px 12px 32px;
+  padding: 12px 22px 12px 22px;
   box-shadow: 0 4px 12px 0 #2d3440;
   margin: 32px 147px 42px 170px;
   background-color: #ff2f64;
@@ -824,6 +879,7 @@ body {
   margin-top: 32px;
   margin-bottom: 42px;
   margin-left: 40px;
+  width: 250px;
 }
 
 .breadcrumbs-list {

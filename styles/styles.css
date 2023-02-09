@@ -169,10 +169,14 @@ body {
 
 .icecream-two-img {
   margin-left: 79px;
+  opacity: 80%;
+  z-index: 1;
 }
 
 .icecream-three-img {
   margin-left: 75px;
+  opacity: 80%;
+  z-index: 1;
 }
 
 .left-arrow {
@@ -189,6 +193,18 @@ body {
   left: -25px;
 }
 
+.left-arrow::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffcbd8;
+  top: -45px;
+  right: -460px;
+  opacity: 40%;
+}
+
 .right-arrow {
   display: flex;
   justify-content: center;
@@ -201,6 +217,18 @@ body {
   position: absolute;
   top: 260px;
   right: 270px;
+}
+
+.right-arrow::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffcbd8;
+  top: -45px;
+  right: -290px;
+  opacity: 40%;
 }
 
 .slider-description-container {
@@ -408,6 +436,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .products-list {
@@ -441,8 +470,9 @@ body {
 }
 
 .products-img {
-  position: relative;
-  top: -51px;
+  position: absolute;
+  top: -50px;
+  left: 51px;
 }
 
 .upper-products-title {
@@ -451,7 +481,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #2d3440;
-  margin-top: 16px;
+  margin-top: 133px;
   margin-bottom: 8px;
 }
 
@@ -499,10 +529,22 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 1170px;
+  height: 480px;
   margin: 0 auto;
   background-image: url(../images/index/waffle-background.jpg);
+<<<<<<< HEAD
+=======
+  background-size: cover;
+>>>>>>> 78cab7b6d3d0c7543ed2e1bfbc80f368a620926d
   background-color: #fcfcfc;
   border-radius: 16px;
+}
+
+.info-container {
+  background-color: #fcfcfc;
+  width: 1122px;
+  height: 432px;
+  margin: auto;
 }
 
 .info-title {
@@ -520,9 +562,8 @@ body {
   grid-template-columns: 510px 510px;
   list-style-type: none;
   padding: 0;
-  margin: 56px 40px 56px 80px;
   column-gap: 30px;
-  row-gap: 40px;
+  margin-left: 40px;
 }
 
 .info-item {
@@ -556,6 +597,9 @@ body {
   min-height: 224px;
   background-color: #fcfcfc;
   border-radius: 16px;
+  background-image: url(../images/index/news-background.png);
+  background-size: cover;
+  background-position: 0 -90px;
 }
 
 .news-text {
@@ -584,7 +628,19 @@ body {
 
 .subscribe-container {
   width: 570px;
-  min-height: 224px;
+  height: 224px;
+  background-color: #fcfcfc;
+  border-radius: 16px;
+  background-image: url(../images/index/subscribe-background.png);
+  background-size: cover;
+}
+
+.subscribe-add-container {
+  position: relative;
+  top: -20px;
+  left: 6px;
+  width: 558px;
+  height: 212px;
   background-color: #fcfcfc;
   border-radius: 16px;
 }
@@ -630,7 +686,6 @@ body {
   cursor: pointer;
 }
 
-
 .delivery {
   display: flex;
   width: 1170px;
@@ -638,6 +693,8 @@ body {
   background-color: #fcfcfc;
   border-radius: 16px;
 }
+
+
 
 .delivery-info-title {
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -648,6 +705,7 @@ body {
   margin: 167px 0 24px 100px;
   width: 356px;
   text-align: left;
+  border-radius: 16px;
 }
 
 .delivery-info-text {

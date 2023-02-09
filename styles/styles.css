@@ -500,7 +500,7 @@ body {
   justify-content: center;
   width: 1170px;
   margin: 0 auto;
-  background-image: url(../images/index/waffle-background.jpg) no-repeat;
+  background-image: url(../images/index/waffle-background.jpg);
   background-color: #fcfcfc;
   border-radius: 16px;
 }
@@ -532,8 +532,13 @@ body {
 }
 
 .info-ring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
+  min-width: 48px;
   height: 48px;
+  min-height: 48px;
   border: 2px solid #2d3440;
   border-radius: 50%;
   margin-right: 16px;

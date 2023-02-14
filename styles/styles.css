@@ -73,8 +73,27 @@ body {
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
-  padding: 0;
-  margin-left: 32px;
+  margin-left: 24px;
+  padding: 8px 16px 8px 16px;
+}
+
+.catalog-header-link:hover {
+  padding: 8px 16px 8px 16px;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+}
+
+.catalog-header-link:active {
+  padding: 8px 16px 8px 16px;
+  background-color: #fcfcfc;
+  border-radius: 30px;
+}
+
+.catalog-header-link:focus {
+  padding: 8px 16px 8px 16px;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+  outline: 2px solid #2d3440;
 }
 
 .right-header-link-icon {
@@ -89,10 +108,28 @@ body {
   line-height: 20px;
   color: #2d3440;
   border: none;
-  padding: 0;
-  margin-left: 35px;
+  padding: 8px 16px 8px 16px;
   background-color: rgba(254, 175, 195, 0.3);
   cursor: pointer;
+}
+
+.right-header-button:hover {
+  padding: 8px 16px 8px 16px;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+}
+
+.right-header-button:active {
+  padding: 8px 16px 8px 16px;
+  background-color: #fcfcfc;
+  border-radius: 30px;
+}
+
+.right-header-button:focus {
+  padding: 8px 16px 8px 16px;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+  outline: 2px solid #2d3440;
 }
 
 .left-header-list {
@@ -1101,7 +1138,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 383px;
+  width: 393px;
   height: 36px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
@@ -1117,7 +1154,44 @@ body {
 }
 
 .fatness-input:not(:first-child) {
+  margin-left: 8px;
+}
+
+.control-mark {
+  display: flex;
+  cursor: pointer;
+}
+
+.control-mark:not(:first-child) {
   margin-left: 16px;
+}
+
+.fatness-input:checked,
+.control-mark::before {
+  position: relative;
+  content: "";
+  width: 15px;
+  min-width: 15px;
+  height: 15px;
+  min-height: 15px;
+  border-radius: 50%;
+  border: 1px solid #2d3440;
+  top: 0;
+  right: 0;
+}
+
+.fatness-input:checked,
+.control-mark::after {
+  position: relative;
+  content: "";
+  width: 6px;
+  min-width: 6px;
+  height: 6px;
+  min-height: 6px;
+  border-radius: 50%;
+  background-color: #2d3440;
+  top: 5px;
+  right: 11px;
 }
 
 .lower-filter {

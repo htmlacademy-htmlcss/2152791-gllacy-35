@@ -70,13 +70,17 @@
         <div class="upper-filter-fatness">
           <p class="fitlter-text">Жирность:</p>
           <form class="fatness-field">
-            <input class="fatness-input" type="radio" id="0">
+            <input class="fatness-input visually-hidden" type="radio" id="0">
+            <span class="control-mark"></span>
             <label class="fatness-value" for="0">0%</label>
-            <input class="fatness-input" type="radio" id="10">
+            <input class="fatness-input visually-hidden" type="radio" id="10" checked>
+            <span class="control-mark"></span>
             <label class="fatness-value" for="10">до 10%</label>
-            <input class="fatness-input" type="radio" id="30">
+            <input class="fatness-input visually-hidden" type="radio" id="30">
+            <span class="control-mark"></span>
             <label class="fatness-value" for="30">до 30%</label>
-            <input class="fatness-input" type="radio" id="up-30">
+            <input class="fatness-input visually-hidden" type="radio" id="up-30">
+            <span class="control-mark"></span>
             <label class="fatness-value" for="up-30">выше 30%</label>
           </form>
         </div>
@@ -84,15 +88,15 @@
       <div class="lower-filter">
         <p class="lower-filter-text">Наполнители:</p>
         <form class="lower-filter-field">
-            <input class="lower-filter-input" type="radio" id="chokolate">
+            <input class="lower-filter-input" type="checkbox" id="chokolate" checked>
             <label class="lower-filter-value" for="chokolate">шоколадные</label>
-            <input class="lower-filter-input" type="radio" id="sugar">
+            <input class="lower-filter-input" type="checkbox" id="sugar" checked>
             <label class="lower-filter-value" for="sugar">сахарные посыпки</label>
-            <input class="lower-filter-input" type="radio" id="fruits">
+            <input class="lower-filter-input" type="checkbox" id="fruits">
             <label class="lower-filter-value" for="fruits">фрукты</label>
-            <input class="lower-filter-input" type="radio" id="syrup">
+            <input class="lower-filter-input" type="checkbox" id="syrup">
             <label class="lower-filter-value" for="syrup">сиропы</label>
-            <input class="lower-filter-input" type="radio" id="jam">
+            <input class="lower-filter-input" type="checkbox" id="jam">
             <label class="lower-filter-value" for="jam">джемы</label>
           </form>
           <button class="filter-button">Применить</button>

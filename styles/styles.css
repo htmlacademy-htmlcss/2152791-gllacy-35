@@ -203,6 +203,27 @@ body {
   align-items: center;
 }
 
+.left-header-item {
+  position: relative;
+}
+
+.search-pop-up {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #fcfcfc;
+  width: 365px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-pop-up-field {
+  width: 324px;
+  height: 48px;
+}
+
 .left-header-phone-link {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -427,10 +448,12 @@ body {
 .slider-description-button:active {
   background-color: rgba(252, 252, 252, 0.4);
   outline: 2px solid #2d3440;
+  border: none;
 }
 
 .slider-description-button:focus {
   outline: 2px solid #2d3440;
+  border: none;
 }
 
 .slider-lower-container {
@@ -450,11 +473,24 @@ body {
   border-radius: 50%;
   opacity: 30%;
   margin-left: 8px;
+  cursor: pointer;
 }
 
 .first-slider-lower-button {
   opacity: 100%;
   margin-left: 0;
+}
+
+.slider-lower-button:hover {
+  outline: 1px solid #fcfcfc;
+}
+
+.slider-lower-button:active {
+  background-color: #fcfcfc;
+}
+
+.slider-lower-button:focus {
+  outline: 1px solid #2d3440;
 }
 
 .slider-links-container {
@@ -472,6 +508,15 @@ body {
 
 .slider-lower-link:not(:first-child) {
   margin-left: 16px;
+}
+
+.slider-lower-link:hover {
+  background-color: #2d3440;
+}
+
+.slider-lower-link:active {
+  background-color: #2d3440;
+  opacity: 30%;
 }
 
 .banners {
@@ -582,10 +627,12 @@ body {
 .banner-button:active {
   background-color: rgba(252, 252, 252, 0.4);
   outline: 2px solid #2d3440;
+  border: none;
 }
 
 .banner-button:focus {
   outline: 2px solid #2d3440;
+  border: none;
 }
 
 
@@ -691,7 +738,7 @@ body {
 }
 
 .lower-products-button:hover {
-  background-color: #fcfcfc;
+  background-color: #2d3440;
   outline: 2px solid #ff2f64;
 }
 
@@ -1445,6 +1492,22 @@ body {
   cursor: pointer;
 }
 
+.filter-button:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  border: 2px solid #fcfcfc;
+}
+
+.filter-button:active {
+  background-color: rgba(252, 252, 252, 0.4);
+  outline: 2px solid #2d3440;
+  border: none;
+}
+
+.filter-button:focus {
+  outline: 2px solid #2d3440;
+  border: none;
+}
+
 .catalog-products {
   width: 1170px;
   min-height: 1076px;
@@ -1531,6 +1594,19 @@ body {
   background-color: #ff2f64;
 }
 
+.card-prise-button:hover {
+  background-color: #2d3440;
+  outline: 2px solid #ff2f64;
+}
+
+.card-prise-button:focus {
+  outline: 2px solid #2d3440;
+}
+
+.card-prise-button:active {
+  background-color: #ffcbd8;
+}
+
 .pagination {
   display: flex;
   justify-content: right;
@@ -1554,6 +1630,23 @@ body {
   height: 44px;
 }
 
+.pagination-button:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  border: 4px solid #fcfcfc;
+}
+
+.pagination-button:active {
+  background-color: rgba(252, 252, 252, 0.4);
+  outline: 2px solid #2d3440;
+  border: none;
+}
+
+.pagination-button:focus {
+  outline: 2px solid #2d3440;
+  border: none;
+}
+
+
 .pagination-list {
   display: flex;
   list-style-type: none;
@@ -1575,26 +1668,45 @@ body {
   line-height: 20px;
   color: #2d3440;
   cursor: pointer;
-  margin-left: 14px;
+  margin-left: 5px;
   padding: 0;
 }
 
 .one-number-button {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
   background-color: #fcfcfc;
 }
 
-.two-number-button {
-  margin-left: 7px;
+.pagination-number-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #FEAFC3;
+}
+
+.one-number-button {
+  background-color: #fcfcfc;
+}
+
+
+.pagination-number-button:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.pagination-number-button:active {
+  outline: 1px solid #fcfcfc;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.pagination-number-button:focus {
+  outline: 1px solid #2d3440;
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .pagination-right-arrow {
   border: none;
   background-color: #feafc3;
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .page-footer {
@@ -1617,6 +1729,15 @@ body {
 
 .youtube-link {
   margin-left: 16px;
+}
+
+.footer-link:hover {
+  background-color: #2d3440;
+}
+
+.footer-link:active {
+  background-color: #2d3440;
+  opacity: 30%;
 }
 
 .footer-menu-list {

@@ -260,6 +260,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header-search {
@@ -285,6 +286,29 @@ body {
 
 .left-header-button:focus {
   outline: 2px solid #2d3440;
+}
+
+.bucket {
+  position: absolute;
+  width: 441px;
+  height: 382px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+}
+
+.bucket-list {
+  list-style-type: none;
+}
+
+.bucket-item {
+  display: flex;
+}
+
+.order-container {
+  display: flex;
 }
 
 .left-header-icon {
@@ -1493,7 +1517,6 @@ body {
   right: 0;
 }
 
-
 .fatness-input:checked + .control-mark::after {
   position: relative;
   content: "";
@@ -1503,8 +1526,8 @@ body {
   min-height: 6px;
   border-radius: 50%;
   background-color: #2d3440;
-  top: 5px;
-  right: 11px;
+  top: 5.5px;
+  right: 11.3px;
 }
 
 .lower-filter {
@@ -1547,6 +1570,23 @@ body {
   margin-left: 16px;
 }
 
+.control-mark-checkbox {
+  display: flex;
+  cursor: pointer;
+}
+
+.control-mark-checkbox:not(:first-child) {
+  margin-left: 16px;
+}
+
+.control-mark-checkbox::before {
+
+}
+
+.lower-filter:checked + .control-mark-checkbox::after {
+
+}
+
 .filter-button {
   position: absolute;
   top: 44px;
@@ -1572,11 +1612,13 @@ body {
   background-color: rgba(252, 252, 252, 0.4);
   outline: 2px solid #2d3440;
   border: none;
+  padding: 10px 34px 10px 34px;
 }
 
 .filter-button:focus {
   outline: 2px solid #2d3440;
   border: none;
+  padding: 10px 34px 10px 34px;
 }
 
 .catalog-products {
@@ -1666,16 +1708,25 @@ body {
 }
 
 .card-prise-button:hover {
-  background-color: #2d3440;
+  background-color: #fcfcfc;
   outline: 2px solid #ff2f64;
 }
 
-.card-prise-button:focus {
-  outline: 2px solid #2d3440;
+.card-prise-button:hover .card-prise-icon path {
+  fill: #2d3440;
 }
 
 .card-prise-button:active {
   background-color: #ffcbd8;
+  outline: 2px solid #ff2f64;
+}
+
+.card-prise-button:active .card-prise-icon path {
+  fill: #2d3440;
+}
+
+.card-prise-button:focus {
+  outline: 2px solid #2d3440;
 }
 
 .pagination {

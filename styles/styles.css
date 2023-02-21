@@ -205,6 +205,59 @@ body {
   position: relative;
 }
 
+.entrance {
+  position: absolute;
+  width: 420px;
+  height: 350px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  z-index: 2;
+  top: 40px;
+  right: -140px;
+}
+
+.entrance-title {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2d3440;
+  margin-top: 48px;
+  margin-bottom: 0;
+  margin-left: 48px;
+}
+
+.entrance-email-field {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+  width: 324px;
+  height: 48px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-top: 32px;
+  margin-left: 48px;
+}
+
+.entrance-password-field {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+  width: 324px;
+  height: 48px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-top: 16px;
+  margin-left: 48px;
+  margin-bottom: 0;
+}
+
 .search-pop-up {
   position: absolute;
   top: 40px;
@@ -288,27 +341,139 @@ body {
   outline: 2px solid #2d3440;
 }
 
+.header-bucket:hover {
+  background-color: #ff4a78;
+}
+
+.header-bucket:hover + .bucket {
+  display: block;
+}
+
 .bucket {
   position: absolute;
   width: 441px;
-  height: 382px;
+  min-height: 382px;
   background-color: #fcfcfc;
   border-radius: 4px;
   top: 40px;
   right: 0;
-  z-index: 1;
+  z-index: 2;
+  display: none;
+}
+
+.bucket-title {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2d3440;
+  margin-top: 48px;
+  margin-left: 48px;
+  margin-bottom: 0;
 }
 
 .bucket-list {
   list-style-type: none;
+  padding: 0;
 }
 
 .bucket-item {
   display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.bucket-item:not(:first-child) {
+  margin-top: 24px;
+}
+
+.bucket-icon {
+  margin-left: 48px;
+}
+
+.bucket-item-container {
+  margin-left: 16px;
+}
+
+.bucket-item-title {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d3440;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bucket-item-prise-weight {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #b9b9b9;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.bucket-prise {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d3440;
+  margin-left: 83px;
+}
+
+.bucket-prise-add {
+  margin-left: 71px;
+}
+
+.bucket-close-button {
+  border: none;
+  background-color: #fcfcfc;
+  cursor: pointer;
+  margin-left: 56px;
 }
 
 .order-container {
   display: flex;
+  margin-top: 64px;
+}
+
+.order-button {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fcfcfc;
+  padding: 12px 32px 12px 32px;
+  border: 4px solid rgba(254, 175, 195, 0.4);
+  box-shadow: 0 4px 12px 0 rgba(255, 47, 100, 0.3);
+  margin-left: 48px;
+  margin-bottom: 48px;
+  background-color: #ff2f64;
+  border-radius: 26px;
+  cursor: pointer;
+  position: relative;
+}
+
+.order-button::before {
+  position: absolute;
+  content: "";
+  width: 345px;
+  height: 1px;
+  background-color: #e7e7e7;
+  top: -40px;
+  left: 0;
+}
+
+.order-text {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d3440;
+  margin-left: 32px;
 }
 
 .left-header-icon {

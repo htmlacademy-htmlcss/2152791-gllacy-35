@@ -213,7 +213,7 @@ body {
 .entrance {
   position: absolute;
   width: 420px;
-  height: 350px;
+  min-height: 350px;
   background-color: #fcfcfc;
   border-radius: 4px;
   z-index: 2;
@@ -279,6 +279,7 @@ body {
   border: 4px solid rgba(254, 175, 195, 0.4);
   box-shadow: 0 4px 12px 0 rgba(254, 175, 195, 0.4);
   margin-left: 48px;
+  margin-right: 48px;
   margin-bottom: 52px;
   background-color: #ff2f64;
   border-radius: 26px;
@@ -378,6 +379,10 @@ body {
   color: #2d3440;
   text-decoration: none;
   padding: 0;
+}
+
+.left-header-phone-link:focus {
+  outline: 2px solid #2d3440;
 }
 
 .left-header-button {
@@ -965,18 +970,15 @@ body {
 }
 
 .banner-button:active {
-  background-color: rgba(252, 252, 252, 0.4);
+  border: 4px solid transparent;
   outline: 2px solid #2d3440;
-  border: none;
-  margin-top: 32px;
-  margin-left: 40px;
+  background-color: #fcfcfc;
 }
 
 .banner-button:focus {
+  border: 4px solid transparent;
   outline: 2px solid #2d3440;
-  border: none;
-  margin-top: 32px;
-  margin-left: 40px;
+  background-color: rgba(252, 252, 252, 0.4);
 }
 
 .banner-button:disabled {
@@ -1081,7 +1083,9 @@ body {
 .lower-products-button {
   border: none;
   width: 32px;
+  min-width: 32px;
   height: 32px;
+  min-height: 32px;
   border-radius: 50%;
   cursor: pointer;
   padding: 0;
@@ -1305,17 +1309,14 @@ body {
 }
 
 .subscribe-button:active {
-  background-color: #feafc3;
-  border: none;
+  border: 4px solid transparent;
   outline: 2px solid #2d3440;
-  margin-left: 22px;
+  background-color: #feafc3;
 }
 
 .subscribe-button:focus {
-  background-color: #ff2f64;
-  border: none;
+  border: 4px solid transparent;
   outline: 2px solid #2d3440;
-  margin-left: 22px;
 }
 
 .subscribe-button:disabled {
@@ -1358,7 +1359,7 @@ body {
 
 .delivery-form-container {
   width: 500px;
-  height: 406px;
+  min-height: 406px;
   background-color: #fcfcfc;
   margin: 64px 64px 64px 135px;
   border-radius: 8px;
@@ -1382,7 +1383,6 @@ body {
 
 .delivery-form-date {
   margin-left: 40px;
-  position: relative;
 }
 
 .form-field-date {
@@ -1421,13 +1421,18 @@ body {
   color: #2d3440;
 }
 
+.delivery-form-container-add {
+  display: flex;
+}
+
 .form-text-date-button {
-  position: absolute;
+  position: relative;
   border: none;
   background-color: #fcfcfc;
   cursor: pointer;
-  top: 3px;
-  left: 40px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
 }
 
 .delivery-form-tel {
@@ -1472,7 +1477,6 @@ body {
 
 .delivery-form-adress {
   margin-left: 40px;
-  position: relative;
 }
 
 .form-field-adress {
@@ -1512,12 +1516,13 @@ body {
 }
 
 .form-text-adress-button {
-  position: absolute;
+  position: relative;
   border: none;
   background-color: #fcfcfc;
   cursor: pointer;
-  top: 3px;
-  left: 55px;
+  top: 22px;
+  width: 14px;
+  height: 14px;
 }
 
 .form-button {
@@ -1542,17 +1547,14 @@ body {
 }
 
 .form-button:active {
-  background-color: #feafc3;
-  border: none;
+  border: 4px solid transparent;
   outline: 2px solid #2d3440;
-  margin: 36px 147px 42px 174px;
+  background-color: #feafc3;
 }
 
 .form-button:focus {
-  background-color: #ff2f64;
-  border: none;
+  border: 4px solid transparent;
   outline: 2px solid #2d3440;
-  margin: 36px 147px 42px 174px;
 }
 
 .form-button:disabled {
@@ -1669,17 +1671,14 @@ body {
 }
 
 .adress-button:active {
-  background-color: #feafc3;
-  border: none;
+  border: 4px solid transparent;
   outline: 2px solid #2d3440;
-  margin-top: 36px;
+  background-color: #feafc3;
 }
 
 .adress-button:focus {
-  background-color: #ff2f64;
-  border: none;
+  border: 4px solid transparent;
   outline: 2px solid #2d3440;
-  margin-top: 36px;
 }
 
 .adress-button:disabled {
@@ -1717,6 +1716,10 @@ body {
   color: #2d3440;
   cursor: pointer;
   text-decoration: none;
+}
+
+.breadcrumbs-link:focus {
+  outline: 2px solid #2d3440;
 }
 
 .breadcrumbs-item:not(:first-child) {
@@ -2151,7 +2154,9 @@ label:active .control-mark:active::after {
   border-radius: 50%;
   border: none;
   width: 32px;
+  min-width: 32px;
   height: 32px;
+  min-height: 32px;
   cursor: pointer;
   padding: 0;
   background-color: #ff2f64;
@@ -2203,7 +2208,6 @@ label:active .control-mark:active::after {
   cursor: pointer;
   margin-right: 270px;
   width: 190px;
-  height: 44px;
 }
 
 .pagination-button:hover {
@@ -2236,6 +2240,10 @@ label:active .control-mark:active::after {
   background-color: #feafc3;
   opacity: 30%;
   cursor: pointer;
+}
+
+.pagination-left-arrow:focus {
+  outline: 2px solid #2d3440;
 }
 
 .pagination-number-button {
@@ -2291,6 +2299,11 @@ label:active .control-mark:active::after {
   cursor: pointer;
   margin-left: 5px;
 }
+
+.pagination-right-arrow:focus {
+  outline: 2px solid #2d3440;
+}
+
 
 .page-footer {
   display: flex;
@@ -2365,6 +2378,11 @@ label:active .control-mark:active::after {
   line-height: 20px;
   color: #2d3440;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.footer-menu-link:focus {
+  outline: 2px solid #2d3440;
 }
 
 .footer-like-icon {
@@ -2400,7 +2418,7 @@ label:active .control-mark:active::after {
   color: #2d3440;
 }
 
-.for-provider::before {
+.for-provider-add::before {
   position: absolute;
   content: "";
   width: 1170px;

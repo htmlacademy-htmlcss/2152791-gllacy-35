@@ -2188,6 +2188,7 @@ label:active .control-mark:active::after {
   opacity: 10%;
 }
 
+
 .pagination {
   display: flex;
   justify-content: right;

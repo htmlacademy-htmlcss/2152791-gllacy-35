@@ -41,7 +41,8 @@
         <button class="left-header-button header-search" type="button"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.7 6.2a4.7 4.7 0 1 1 9.3 0 4.7 4.7 0 0 1-9.3 0Zm8.4 4.7a6 6 0 1 1 1-1l2.4 2.5a.7.7 0 1 1-1 1l-2.4-2.5Z" fill="#2D3440"/></svg></button>
         <div class="search-pop-up">
           <form class="search-pop-up-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="search-pop-up-field" type="text" placeholder="Поиск по сайту" required>
+            <input class="search-pop-up-field" type="text" placeholder="Поиск по сайту" id="search" required>
+            <label class="visually-hidden" for="search">Поле для поиска</label>
           </form>
         </div>
       </li>
@@ -52,8 +53,10 @@
           <div class="entrance">
             <h2 class="entrance-title">Личный кабинет</h2>
             <form class="entrance-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="entrance-email-field" type="email" placeholder="email@example.com" required>
-              <input class="entrance-password-field" type="password" required>
+              <input class="entrance-email-field" type="email" id="email-field" placeholder="email@example.com" required>
+              <label class="visually-hidden" for="email-field">Поле для почты</label>
+              <input class="entrance-password-field" type="password" id="password-field" required>
+              <label class="visually-hidden" for="password-field">Поле для пароля</label>
             </form>
             <div class="entrance-container">
               <button class="entrance-button" type="button">Войти</button>

@@ -159,6 +159,10 @@ body {
   outline: 2px solid #2d3440;
 }
 
+.right-header-link:focus {
+  outline: 2px solid #2d3440;
+}
+
 .right-header-link-icon {
   margin-bottom: 2px;
   margin-left: 8px;
@@ -864,7 +868,7 @@ body {
   opacity: 30%;
 }
 
-.slider-lower-link:hover {
+.slider-lower-link:focus {
   background-color: #2d3440;
   border: 2px solid #2d3440;
 }
@@ -1426,13 +1430,21 @@ body {
 }
 
 .form-text-date-button {
-  position: relative;
   border: none;
   background-color: #fcfcfc;
   cursor: pointer;
-  top: 2px;
   width: 14px;
   height: 14px;
+  margin-top: 2px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.form-text-date-button:focus {
+  outline: 2px solid #2d3440;
 }
 
 .delivery-form-tel {
@@ -1516,13 +1528,21 @@ body {
 }
 
 .form-text-adress-button {
-  position: relative;
   border: none;
   background-color: #fcfcfc;
   cursor: pointer;
-  top: 22px;
   width: 14px;
   height: 14px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23px;
+  margin-left: 5px;
+}
+
+.form-text-adress-button:focus {
+  outline: 2px solid #2d3440;
 }
 
 .form-button {
@@ -2188,7 +2208,6 @@ label:active .control-mark:active::after {
   opacity: 10%;
 }
 
-
 .pagination {
   display: flex;
   justify-content: right;
@@ -2348,7 +2367,7 @@ label:active .control-mark:active::after {
   opacity: 30%;
 }
 
-.footer-link:hover {
+.footer-link:focus {
   background-color: #2d3440;
   border: 2px solid #2d3440;
 }
@@ -2400,6 +2419,10 @@ label:active .control-mark:active::after {
 
 .footer-logo-link {
   margin-top: 48px;
+}
+
+.footer-logo-link:focus {
+  outline: 2px solid #2d3440;
 }
 
 .footer-text {

@@ -41,7 +41,8 @@
         <button class="left-header-button header-search" type="button"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.7 6.2a4.7 4.7 0 1 1 9.3 0 4.7 4.7 0 0 1-9.3 0Zm8.4 4.7a6 6 0 1 1 1-1l2.4 2.5a.7.7 0 1 1-1 1l-2.4-2.5Z" fill="#2D3440"/></svg></button>
         <div class="search-pop-up">
           <form class="search-pop-up-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="search-pop-up-field" type="text" placeholder="Поиск по сайту" required>
+            <input class="search-pop-up-field" type="text" placeholder="Поиск по сайту" id="search" required>
+            <label class="visually-hidden" for="search">Поле для поиска</label>
           </form>
         </div>
       </li>
@@ -52,16 +53,18 @@
           <div class="entrance">
             <h2 class="entrance-title">Личный кабинет</h2>
             <form class="entrance-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="entrance-email-field" type="email" placeholder="email@example.com" required>
-              <input class="entrance-password-field" type="password" required>
-            </form>
-            <div class="entrance-container">
-              <button class="entrance-button" type="button">Войти</button>
-              <div class="entrance-buttons-container">
-                <button class="forget-password-button" type="button">Забыли пароль?</button>
-                <button class="registration-button" type="button">Регистрация</button>
+              <input class="entrance-email-field" type="email" id="email-field" placeholder="email@example.com" required>
+              <label class="visually-hidden" for="email-field">Поле для почты</label>
+              <input class="entrance-password-field" type="password" id="password-field" required>
+              <label class="visually-hidden" for="password-field">Поле для пароля</label>
+              <div class="entrance-container">
+                <button class="entrance-button" type="submit">Войти</button>
+                <div class="entrance-buttons-container">
+                  <button class="forget-password-button" type="button">Забыли пароль?</button>
+                  <button class="registration-button" type="button">Регистрация</button>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
       </li>
       <li class="left-header-item">
@@ -266,7 +269,8 @@
         <div class="subscribe-add-container">
         <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscribe-field" type="email" placeholder="email@example.com" required>
+          <input class="subscribe-field" type="email" id="sub-field" placeholder="email@example.com" required>
+          <label class="visually-hidden" for="sub-field">Поле для подписки</label>
           <button class="subscribe-button" type="button">Отправить</button>
         </form>
         </div>
@@ -279,35 +283,31 @@
        </div>
       <div class="delivery-form-container">
         <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <div class="form-container">
         <form class="delivery-form-date" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form-container">
           <div class="delivery-form-container-add">
-          <p class="form-text-date">Дата</p>
+          <label class="form-text-date" for="field-date">Дата</label>
           <button class="form-text-date-button" type="button"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z" fill="#2D3440"/>
             </svg>
             </button>
           </div>
-          <input class="form-field-date" type="text" placeholder="01.04.2020" required>
-        </form>
-        <form class="delivery-form-tel" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="form-text-tel">Телефон</p>
-          <input class="form-field-tel" type="text" placeholder="+7 800 999-00-00" required>
-        </form>
+          <input class="form-field-date" type="text" id="field-date" placeholder="01.04.2020" required>
+          <label class="form-text-tel" for="field-tel">Телефон</label>
+          <input class="form-field-tel" type="text" id="field-tel" placeholder="+7 800 999-00-00" required>
         </div>
         <div class="form-container-adress">
-        <form class="delivery-form-adress" action="https://echo.htmlacademy.ru/" method="post">
           <div class="delivery-form-container-add">
-          <p class="form-text-adress">Адрес</p>
+          <label class="form-text-adress" for="field-adress">Адрес</label>
           <button class="form-text-adress-button" type="button"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z" fill="#2D3440"/>
             </svg>
             </button>
           </div>
-          <input class="form-field-adress" type="text" placeholder="ул. Большая Конюшенная, 19/8" required>
-        </form>
+          <input class="form-field-adress" type="text" id="field-adress" placeholder="ул. Большая Конюшенная, 19/8" required>
+          <button class="form-button" type="submit">Отправить</button>
         </div>
-        <button class="form-button" type="button">Отправить</button>
+        </form>
       </div>
     </section>
     <section class="adress">
